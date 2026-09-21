@@ -2,7 +2,11 @@ import { getProject, type IProject, type ISheet } from '@theatre/core';
 
 import projectState from './state.json';
 
-export const THEATRE_PROJECT_NAME = 'Volvo';
+/**
+ * Also the key Theatre uses to persist studio edits in browser storage, so
+ * renaming it discards any state saved under the old name.
+ */
+export const THEATRE_PROJECT_NAME = 'App';
 export const DEMO_SHEET_NAME = 'Demo Scene';
 
 /**

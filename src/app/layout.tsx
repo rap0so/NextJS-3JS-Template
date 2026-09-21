@@ -20,10 +20,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Volvo',
-    template: '%s | Volvo',
+    default: 'Next.js Template',
+    template: '%s | Next.js Template',
   },
-  description: 'Next.js + TypeScript + GSAP + Theatre.js, ready for Contentful.',
+  description: 'Next.js App Router starter with TypeScript, GSAP and Theatre.js.',
 };
 
 export const viewport: Viewport = {

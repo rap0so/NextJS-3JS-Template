@@ -20,7 +20,7 @@ describe('AnimatedHero', () => {
   it('exposes the headline as a single accessible name despite the word split', () => {
     render(<AnimatedHero />);
 
-    expect(screen.getByRole('heading', { level: 1 })).toHaveAccessibleName('Volvo Next.js');
+    expect(screen.getByRole('heading', { level: 1 })).toHaveAccessibleName('Next.js Template');
   });
 
   it('unsubscribes from the Theatre sheet on unmount', () => {

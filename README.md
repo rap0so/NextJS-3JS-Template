@@ -1,7 +1,8 @@
-# volvo-nextjs
+# nextjs-template
 
-Next.js 16 (App Router) + TypeScript, with Airbnb ESLint, native CSS nesting,
-GSAP and Theatre.js. The Contentful layer is scaffolded and ready to wire up.
+A project template: Next.js 16 (App Router) + TypeScript, with Airbnb ESLint,
+native CSS nesting, GSAP and Theatre.js. The Contentful layer is scaffolded and
+ready to wire up.
 
 ## Requirements
 
@@ -112,6 +113,19 @@ To wire it up:
 as normal Next.js caching. Preview requests are never cached. A draft-mode route
 (`/api/draft`) is the natural next step; `CONTENTFUL_PREVIEW_SECRET` is already
 reserved for it.
+
+## Making it yours
+
+Nothing in here is branded. To start a real project from this template:
+
+1. Set `name` in `package.json`.
+2. Set `metadata.title` and `metadata.description` in `src/app/layout.tsx`.
+3. Adjust the colours and type scale in `src/styles/tokens.css`.
+4. Delete `src/components/demo/` (and its test) once you no longer need the
+   GSAP + Theatre example, then point `src/app/page.tsx` at your own content.
+5. Optionally rename `THEATRE_PROJECT_NAME` in `src/lib/theatre/project.ts` --
+   it is the key Theatre stores studio edits under, so changing it later
+   discards state saved under the old name.
 
 ## Layout
 

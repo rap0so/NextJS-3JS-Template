@@ -8,18 +8,18 @@ import { getDemoSheet } from '@/lib/theatre/project';
 
 import styles from './animated-hero.module.css';
 
-const HEADLINE = 'Volvo Next.js';
+const HEADLINE = 'Next.js Template';
 
 /**
  * Split into per-word spans so GSAP can stagger them. Animating siblings moves
  * the whitespace text nodes between them, which would collapse the heading's
- * accessible name to "VolvoNext.js" -- so the words are hidden from the
+ * accessible name to "Next.jsTemplate" -- so the words are hidden from the
  * accessibility tree and the real text is exposed once via `aria-label`,
  * with the visual gap coming from CSS rather than from text nodes.
  */
 const HEADLINE_WORDS = [
-  { text: 'Volvo', accent: false },
-  { text: 'Next.js', accent: true },
+  { text: 'Next.js', accent: false },
+  { text: 'Template', accent: true },
 ];
 
 const BOX_PROPS = {
