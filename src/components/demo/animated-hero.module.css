@@ -1,0 +1,67 @@
+.hero {
+  display: grid;
+  gap: var(--space-6);
+  place-items: center;
+  min-block-size: 100dvh;
+  padding: var(--space-6);
+  text-align: center;
+
+  & .headline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.25em;
+    justify-content: center;
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+  }
+
+  & .subtitle {
+    max-inline-size: 48ch;
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-lg);
+  }
+}
+
+/* Transforms need a block box, and these spans are the GSAP stagger targets. */
+.word {
+  display: inline-block;
+
+  &.accent {
+    color: var(--color-accent);
+  }
+}
+
+.stage {
+  display: grid;
+  place-items: center;
+  inline-size: min(100%, 32rem);
+  block-size: 12rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.box {
+  inline-size: 4rem;
+  block-size: 4rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-soft));
+  will-change: transform;
+}
+
+.hint {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+
+  & code {
+    padding: 0.15em 0.4em;
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    font-family: var(--font-mono);
+  }
+}

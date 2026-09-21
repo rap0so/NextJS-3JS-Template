@@ -1,0 +1,7 @@
+.next
+out
+build
+coverage
+node_modules
+yarn.lock
+src/lib/theatre/state.json
